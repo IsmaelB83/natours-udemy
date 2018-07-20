@@ -1,15 +1,15 @@
-/* COLORS */
-:root {
-    --font-grey: rgba(119, 119, 119, 1);
-    --light-green: rgba(126, 213, 111, 1);
-    --light-green-t08: rgba(126, 213, 111, 0.8);
-    --medium-green: rgba(85, 197, 122, 1);
-    --medium-green-t08: rgba(85, 197, 122, 0.8);
-    --dark-green: rgba(40, 180, 133, 1);
-    --dark-green-t08: rgba(40, 180, 133, 0.8);
-}
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
 
-* {
+$color-grey-dark: #777;
+$color-white: #fff;
+
+
+/* COLORS */
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: var(--font-grey);
+    color: $color-grey-dark;
     padding: 30px;
 }
 
@@ -30,8 +30,8 @@ header {
     background-image: 
         linear-gradient(
             to right bottom,
-            var(--light-green-t08),
-            var(--dark-green-t08)),
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
@@ -59,7 +59,7 @@ header {
 
 .heading-primary {
     display: block;
-    color: white;
+    color: $color-white;
     text-transform: uppercase;
     margin-bottom: 60px;
     /* fix to the "shaking" effect when animation */
@@ -135,8 +135,8 @@ header {
 }
 
 .btn-white {
-    background-color: #fff;
-    color: #777;
+    background-color: $color-white;
+    color: $color-grey-dark;
 }
 
 .btn::after {
@@ -153,7 +153,7 @@ header {
 }
 
 .btn-white::after {
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after {
