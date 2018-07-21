@@ -4,7 +4,9 @@
   "description": "Natours project from udemy advanced css course",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "start": "npm run lite",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "lite": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/IsmaelB83/natours-udemy#readme",
   "devDependencies": {
+    "lite-server": "^2.4.0",
     "node-sass": "^4.9.2"
   },
   "dependencies": {}
