@@ -388,6 +388,20 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.05); }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -455,5 +469,5 @@ body {
   margin-top: -12rem; }
 
 .section-stories {
-  padding-bottom: 15rem;
-  background-color: #f7f7f7; }
+  position: relative;
+  padding: 15rem 0; }
