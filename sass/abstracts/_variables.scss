@@ -13,6 +13,8 @@ $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
 $color-grey-dark: #777;
+$color-grey-dark-2: #999;
+
 $color-white: #fff;
 $color-black: #000;
 
@@ -24,12 +26,5 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
 
-// MARGIN
-.u-margin-bottom-small { margin-bottom: 1.5rem; }
-.u-margin-bottom-medium { margin-bottom: 4rem; }
-.u-margin-bottom-big { margin-bottom: 8rem; }
-
-.u-margin-top-small { margin-top: 1.5rem; }
-.u-margin-top-medium { margin-top: 4rem; }
-.u-margin-top-big { margin-top: 8rem; }
-.u-margin-top-huge { margin-top: 10rem; }
+// RADIUS
+$border-radius-small: 3px;
